@@ -8,11 +8,40 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	</head>
+	<style>
+		.container-fluid{
+		background-color: yellow ;
+		padding: 0 90px;
+		color: green;
+		}
+		.bg1{
+		background: cyan;
+		}
+		.bg2{
+		background: black;
+		}
+		.bg3{
+		background: red;
+		}
+	</style>
 	<body>
 
 		<div class="container-fluid">
 			<h1>My First Bootstrap Page</h1>
 			<p>This is some text.</p>
+			<div class="row" >
+				<div class="col-lg-3 bg1 black"><center><img class="img-circle" src="images/img2.jpg" width="200" height="300"></center></div>
+				<div class="col-lg-6 bg2"><center><img class="img-rounded" src="images/img3.jpg" width="500" height="300"></center> </div>
+				<div class="col-lg-3 bg3"> <center><img class="img-circle" src="images/img2.jpg" width="200" height="300"></center> </div>
+			</div>
+			
+			<div class="page-header">
+				<h1>NEW SKILL</h1>
+				<p>Bootstrap</p>
+			</div>
+			<div class="well well-sm"> small well</div>
+			<div class="well"> normal well</div>
+			<div class="well well-lg">large well</div>
 		</div>
 
 	</body>
