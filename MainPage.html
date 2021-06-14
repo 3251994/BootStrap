@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Bootstrap Works</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>Bootstrap Works</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	</head>
 	<style>
-		.container-fluid{
+		.container{
 		background-color: yellow ;
 		padding: 0 90px;
 		color: green;
@@ -26,9 +26,16 @@
 	</style>
 	<body>
 
-		<div class="container-fluid">
-			<h1>My First Bootstrap Page</h1>
-			<p>This is some text.</p>
+		<div class="container">
+			<div class="btn-group btn-group-justified">
+				<a href="#" class="btn btn-primary">HOME</a>
+				<a href="#" class="btn btn-primary">Services</a>
+				<a href="#" class="btn btn-primary">About Us</a>
+				<a href="#" class="btn btn-primary">Contact</a>
+			</div>
+				
+			
+			<br><br>
 			<div class="row" >
 				<div class="col-lg-3 bg1 black"><center><img class="img-circle" src="images/img2.jpg" width="200" height="300"></center></div>
 				<div class="col-lg-6 bg2"><center><img class="img-rounded" src="images/img3.jpg" width="500" height="300"></center> </div>
@@ -37,13 +44,22 @@
 			
 			<div class="page-header">
 				<h1>NEW SKILL</h1>
-				<p>Bootstrap</p>
+				<div class="btn-group">
+						<button type="button" class="btn btn-primary">Select</button>
+						<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+						<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Bootstrap</a></li>
+							<li><a href="#">Javascript</a></li>
+						</ul>
+				</div>
 			</div>
 			<div class="well well-sm"> small well</div>
 			<div class="well"> normal well</div>
 			<div class="well well-lg">large well</div>
 		
-		<button type="button" class="btn btn-success btn-lg">Success</button>
+		<button type="button" class="btn btn-success">Success</button>
 		</div>
 
 	</body>
