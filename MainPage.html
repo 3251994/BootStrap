@@ -7,12 +7,13 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<style>
 		.container{
 		background-color: yellow ;
 		padding: 0 90px;
-		color: green;
+		color: black;
 		}
 		.bg1{
 		background: cyan;
@@ -32,9 +33,11 @@
 				<a href="#" class="btn btn-primary">Services</a>
 				<a href="#" class="btn btn-primary">About Us</a>
 				<a href="#" class="btn btn-primary">Contact</a>
-			</div>
 				
-			
+			</div>
+			<button type="button" class="btn btn-default" align="right">
+					<span class="glyphicon glyphicon-search"></span> Search
+			</button>
 			<br><br>
 			<div class="row" >
 				<div class="col-lg-3 bg1 black"><center><img class="img-circle" src="images/img2.jpg" width="200" height="300"></center></div>
@@ -54,12 +57,42 @@
 							<li><a href="#">Javascript</a></li>
 						</ul>
 				</div>
+				
 			</div>
-			<div class="well well-sm"> small well</div>
-			<div class="well"> normal well</div>
-			<div class="well well-lg">large well</div>
-		
+			<div class="well well-sm">
+				<a href="#">News <span class="badge">5</span></a>
+			</div>
+			<div class="well">
+				<a href="#">Comments <span class="badge">10</span></a>
+			</div>
+			<div class="well well-lg">
+				<a href="#">Updates <span class="badge">2</span></a>
+			</div>
+			<ul class="pagination">
+				<li class="active"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+			</ul>
+			<div>
+				<span class="glyphicon glyphicon-heart justify-content-center">
+				<span class="glyphicon glyphicon-star justify-content-center">
+				<span class="glyphicon glyphicon-print justify-content-center">
+			</div>
+		<div class="progress">
+			<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+					aria-valuemin="0" aria-valuemax="100" style="width:40%">
+			40% Complete (success)
+			</div>
+		</div>
 		<button type="button" class="btn btn-success">Success</button>
+		<div><center>
+		<span class="glyphicon glyphicon-envelope">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-twitter"></i>
+		</center></div>
 		</div>
 
 	</body>
